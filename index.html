@@ -35,7 +35,47 @@
                 <a type="button" class="button" href="https://www.instagram.com/gaurav_singh72/"><i class="fa fa-instagram"></i></button>
                 <a type="button" class="button" href="https://www.linkedin.com/in/gaurav-singh-03b9021ba"><i class="fa fa-linkedin"></i></button><br>
             </div>
-                <a type="button" class="cvbut" href="cv.pdf">Downlaod CV</a>
+
+
+
+                    
+
+
+
+<div class="buttons">
+        <button
+          class="cvbut"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          Downlaod CV
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+
+
+
+
+                    
         </div>
         <div class="profile">
             <img src="happy.png" height="350px" width="350px" style="margin-bottom: 70px;">
